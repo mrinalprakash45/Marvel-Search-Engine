@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Comics</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/characters-search.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body onload="character()">
+    <header>
+        <nav>
+            <div>
+                <img src="img/Marvel-Comics-logo.png" alt="">
+            </div>
+            <div>
+                <ul class="menu">
+                    <li><a href="#characters">Characters</a></li>
+                    <li><a href="#comics">Comics</a></li>
+                    <li><a href="#series">Series</a></li>
+                    <li><a href="#favourites">Favourites</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+             </div>
+        </nav>
+    </header>
+    <section id="characters-search">
+        <form id="connectionForm">
+            <div>
+                <h1>Marvel Comics Character Search</h1>
+            </div>
+            <div>
+                <input type="text" id="search-character" placeholder="(Ex. Hulk, Iron Man, Spider-Man, etc...)" onkeyup="showCorrespondingHeros()">
+            </div>
+            <div>
+                <button type="submit" id="submit">Search</button>
+            </div>
+        </form>
+        <div id="cards-group"></div>
+    </section>
+    <section id="information">
+        <div class="container" id="contentContainer">
+            <div id="characterSpinnerSection"></div>
+            <div id="comicsSpinnerSection"></div>
+            <section id="characterSection"></section>
+            <section id="comicSection"></section> 
+        </div>
+    </section>
+    <footer>
+        <p>Created by Mrinal Prakash</p>
+    </footer>
+    <script src="js/characters-search.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/collect.js/4.34.3/collect.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</body>
+</html>

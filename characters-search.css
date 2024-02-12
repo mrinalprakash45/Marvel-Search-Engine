@@ -1,0 +1,90 @@
+#characters-search
+{
+    background-color: black;
+    padding: 50px 100px;
+    border-top: 1px solid gray;
+}
+#characters-search > #connectionForm > div > h1
+{
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+#characters-search > #connectionForm > div > input
+{
+    width: 97%;
+    height: 30px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+#characters-search > #connectionForm > div:last-child
+{
+    text-align: end;
+    margin-top: 10px;
+}
+#characters-search > #connectionForm > div > button
+{
+    padding: 10px 20px;
+    background-color: #b50707;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+}
+#cards-group .row
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+#cards-group .row > div
+{
+    background-color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 2px solid red;
+}
+#cards-group .row > div:hover
+{
+    background-color: #b50707;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+#cards-group .row > div > div > img
+{
+    height: 630px;
+    width: 430px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+@media screen and (max-width:425px)
+{
+    #characters-search 
+    {
+        padding: 50px 20px;
+    }
+    #cards-group .row
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #cards-group .row > div > div > img
+    {
+        height: 100%;
+        width: 100%;
+    }
+    #characters-search > #connectionForm > div:last-child 
+    {
+        text-align: center;
+    }
+    #characters-search > #connectionForm > div > input
+    {
+        width: 80%;
+    }
+    .card
+    {
+        text-align: center;
+    }
+}
