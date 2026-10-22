@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Explore Marvel characters and comics.">
+  <title>Marvel Explorer</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/characters-search.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <script src="js/characters-search.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Main navigation">
+      <a class="brand" href="#" aria-label="Marvel Explorer home"><img src="img/Marvel-Comics-logo.png" alt="Marvel Comics"></a>
+      <button class="hamburger" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mainMenu"><span></span><span></span><span></span></button>
+      <ul class="menu" id="mainMenu">
+        <li><a href="#characters-search">Characters</a></li><li><a href="#comicSection">Comics</a></li><li><a href="#characterSection">Details</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="characters-search" class="search-section">
+      <div class="section-inner">
+        <p class="eyebrow">MARVEL UNIVERSE</p><h1>Find your hero.</h1>
+        <p class="intro">Search iconic characters and discover their stories, stats, and comics.</p>
+        <form id="connectionForm" role="search">
+          <label class="sr-only" for="search-character">Character name</label>
+          <input type="search" id="search-character" name="name" placeholder="Try Spider-Man, Hulk, Iron Man…" autocomplete="off">
+          <button type="submit" id="submit">Search <span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="search-hint" id="searchHint">Enter a character name to get started.</p>
+        <div id="cards-group" aria-live="polite"></div>
+      </div>
+    </section>
+    <section id="information" class="information-section">
+      <div class="container">
+        <div id="characterSpinnerSection" aria-live="polite"></div><section id="characterSection"></section>
+        <div id="comicsSpinnerSection" aria-live="polite"></div><section id="comicSection"></section>
+      </div>
+    </section>
+  </main>
+  <footer><p>Made with <span aria-label="love">♥</span> by Mrinal Prakash</p><small>Marvel characters and comics belong to Marvel.</small></footer>
+</body>
+</html>

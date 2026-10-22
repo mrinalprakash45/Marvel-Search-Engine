@@ -1,0 +1,1 @@
+footer{padding:24px 16px calc(24px + env(safe-area-inset-bottom));text-align:center;background:#090909;border-top:1px solid #292929}footer p{margin:0;font-weight:700;font-size:.9rem}footer p span{color:var(--red)}footer small{display:block;color:#777;font-size:.75rem;margin-top:5px}
